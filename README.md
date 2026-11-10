@@ -16,15 +16,13 @@
 
 ## 二、开发环境
 
-| 项目 | 版本 / 说明 |
-| --- | --- |
-| IDE | DevEco Studio（已装中文包与设备管理器） |
-| 工程模型 | Stage 模型，ArkTS + ArkUI 声明式开发 |
-| 存储 | Preferences（`@ohos.data.preferences`） |
-| 测试框架 | Hypium（`@ohos/hypium`） |
-| 运行目标 | HarmonyOS 手机模拟器或真机 |
-
-> 如果用的是较旧 SDK，`EntryAbility.ets` 里的 `@kit.AbilityKit` 导入可以换成 `@ohos.app.ability.UIAbility` 等对应模块。
+| 项目   | 版本 / 说明                               |
+| ---- | ------------------------------------- |
+| IDE  | DevEco Studio（已装中文包与设备管理器）            |
+| 工程模型 | Stage 模型，ArkTS + ArkUI 声明式开发          |
+| 存储   | Preferences（`@ohos.data.preferences`） |
+| 测试框架 | Hypium（`@ohos/hypium`）                |
+| 运行目标 | HarmonyOS 手机模拟器或真机                    |
 
 ## 三、目录结构
 
@@ -60,7 +58,7 @@ MistArchive/
 
 1. 打开 DevEco Studio，新建一个 **Empty Stage** 工程，模块名 `entry`，语言选 ArkTS，UI 模式选 ArkUI。
 2. 对照上面的目录结构，把仓库里 `entry/src/main/ets/` 和 `entry/src/main/resources/base/profile/main_pages.json` 拷到新工程对应位置，同名文件直接覆盖。
-3. 看一下 `entry/src/main/module.json5` 里有没有注册入口 Ability（新建工程一般已经带了），关键片段如下：
+3. 看一下 `entry/src/main/module.json5` 里有没有注册入口 Ability，关键片段如下：
 
 ```json5
 "abilities": [
@@ -105,5 +103,3 @@ hvigorw ohosTest
 完整流程录屏见：[`docs/record/实验录屏.mp4`](docs/record/实验录屏.mp4)。
 
 视频按下面顺序走了一遍：接受委托 → 走访三个场景，点到有效和无效位置 → 看线索板 → 凑满 6 条进推理 → 选判断、看到结局 → 杀进程重进，确认进度恢复 → 重开新案清空。
-
-> （注：部分内容由豆包 AI 生成）
